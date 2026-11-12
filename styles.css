@@ -1,0 +1,56 @@
+/*Source of code for dynamic background: https://codepen.io/P1N2O/pen/pyBNzX*/
+
+body {
+    /* background-color: gainsboro; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 2%;
+
+    background: linear-gradient(-45deg, #58b3e9, #8d51ae);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+
+    color: #000000;
+}
+
+h1
+{
+    text-align: center;
+}
+
+ul
+{
+    display:flex;
+    justify-content: center;
+}
+
+li
+{
+    background-color: rgba(255, 255, 255, 0.71);
+    font-size: 1.5em;
+    border-radius: 5em;
+    list-style: none;
+    width: 15%;
+    height: 3em;
+    margin: 2%;
+}
+
+#bodyContents
+{
+    background-color: rgba(255, 255, 255, 0.71);
+    border-radius: 5em;
+    margin: 2%;
+    padding: 2%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
