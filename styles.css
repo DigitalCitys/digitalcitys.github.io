@@ -60,8 +60,9 @@ nav>ul>li>a>button
     border: 0;
     border-radius: 1em;
     width: 110%;
-
     padding: 0.5em;
+
+    box-shadow: 0px 0px 10px #ffffff;
 }
 
 #bodyContents
@@ -70,6 +71,8 @@ nav>ul>li>a>button
     border-radius: 5em;
     margin: 2%;
     padding: 2%;
+
+    box-shadow: 0px 0px 10px #ffffff;
 }
 
 @keyframes gradient {
