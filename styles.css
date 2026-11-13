@@ -18,13 +18,41 @@ h1
     text-align: center;
 }
 
-ul
+.grid
+{
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid>li
+{
+    list-style: none;
+
+    background-color: rgba(255, 255, 255, 0.71);
+    width: 8em;
+    height: 8em;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>ul
 {
     display:flex;
     justify-content: center;
 }
 
-li
+nav>ul>li
+{
+    list-style: none;
+}
+
+nav>ul>li>button
 {
     background-color: rgba(255, 255, 255, 0.71);
     font-size: 1.5em;

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<script src="portfolio.js"></script>
+<script>
+    buildHead();
+</script>
+<body>
+    <script>
+        buildStartOfSite();
+    </script>
+    <div id="bodyContents">
+        <h2>Portfolio</h2>
+        <h3>Personal Projects</h3>
+        <section id="personalProjects"></section>
+        <h3>School Projects</h3>
+        <section id="schoolProjects"></section>
+    </div>
+    
+</body>
+<script>
+    // Personal projects
+    addToPersonalProjects("🏬 Product Finder (June 2026)", "A web application for companies that allows the user to search and filter through items based on a stock spreadsheet so that they do not have to search directly through the spreadsheet. Has functionality for swapping the spreadsheet with an updated spreadsheet. Built with assistance from Claude using a separate dummy project to avoid leaking confidential information.");
+    addToPersonalProjects("🍔 DineThenFly (May 2026)", "Created using HTML, CSS, JavaScript, and Python Flask. Prototype of a web application that shows menus of dining locations in airports. Built with assistance from Claude.");
+    addToPersonalProjects("🛫 HyperFIDS (May 2026)", "A basic, simulated flight information display system in HTML that uses fictional flight data from an SQL database, with status such as delayed, landed, etc. Shows system time on screen.");
+
+    // School projects
+    addToSchoolProjects("🎶 MIDI Project (SWEN-340) (February-April 2026)", "Used the C programming language to create a MIDI music player for the STM32L476RG board by parsing MIDI data (Meta events, MIDI events, notes, etc.) Played Twinkle Twinkle Little Star and the Harry Potter theme song.");
+    addToSchoolProjects("🎳 Refactoring Project (SWEN-262) (November-December 2025)", "A small project I worked on with 4 other students in my Engineering of Software Subsystems class at RIT, refactoring a Java Swing project from 2002 called Bowling Alley Management System. Used SonarQube to detect issues in the system and documented them. Worked on factory methods for Java Swing buttons, even during Thanksgiving break, to reduce duplicate code. Encouraged team members to volunteer to work on specific tasks. Used Slack frequently to communicate with team members, discussing parts of the project that need to be completed. At the end of the project, I got team members to come together so we could finish documentation, compile the refactored program, and create a .zip file containing all deliverables.");
+    addToSchoolProjects("🧌 Multi-User Dungeon (SWEN-262) (September-November 2025)", "A command line-based dungeon crawler game made in Java with 5 other students in my Engineering of Software Subsystems class at RIT. Used the Strategy, Singleton, and Proxy patterns to create diagrams for subsystems. Used the Adapter pattern to enable saving game data to JSON and XML format in addition to Java Serializable format. Worked on unit tests, one of which detected a bug in the system that was later fixed after I mentioned it. Was an active team member who greeted and communicated with team members frequently, asking them about their progress in the specific areas they're working on. Also paid close attention to due dates of assignments, such as documentation and presentations.");
+</script>
