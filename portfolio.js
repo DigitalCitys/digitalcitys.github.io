@@ -41,6 +41,21 @@ function addProjectImage(projectTitle, imgPath)
     );
 }
 
+function addProjectVideo(projectTitle, videoPath)
+{
+    document.getElementById(projectTitle).insertAdjacentHTML('beforeend', 
+        `
+        <video controls width="800px">
+        <source src=${videoPath} type="video/mp4" />
+        
+        Download the
+        <a href=${videoPath}>MP4</a>
+        video.
+        </video>
+        `
+    );
+}
+
 function addToSchoolProjects(title, description) {
     let project = document.createElement('div');
     project.className = 'project';
