@@ -41,11 +41,11 @@ function addProjectImage(projectTitle, imgPath)
     );
 }
 
-function addProjectVideo(projectTitle, videoPath)
+function addProjectVideo(projectTitle, videoPath, width)
 {
     document.getElementById(projectTitle).insertAdjacentHTML('beforeend', 
         `
-        <video controls width="800px">
+        <video controls width=${width}>
         <source src=${videoPath} type="video/mp4" />
         
         Download the
