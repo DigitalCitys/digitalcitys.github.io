@@ -27,8 +27,18 @@ function buildStartOfSite()
 function addToPersonalProjects(title, description) {
     let project = document.createElement('div');
     project.className = 'project';
+    project.id = title;
     project.innerHTML = `<h4>${title}</h4><p>${description}</p>`;
     document.getElementById('personalProjects').appendChild(project);
+}
+
+function addProjectImage(projectTitle, imgPath)
+{
+    document.getElementById(projectTitle).insertAdjacentHTML('beforeend', 
+        `
+        <img src="${imgPath}" alt="${projectTitle}" style="width: 800px; height: auto;">
+        `
+    );
 }
 
 function addToSchoolProjects(title, description) {
