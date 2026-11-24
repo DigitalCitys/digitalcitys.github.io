@@ -82,6 +82,21 @@ nav>ul>li>a>button:hover
     animation: transitionIn 0.2s;
 }
 
+.bodyContentsButton
+{
+    /* background-color: rgba(255, 255, 255, 0.71);
+     */
+    background: linear-gradient(-45deg, #58b3e9, #8d51ae);
+    animation: gradient 15s ease infinite;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #8d51ae;
+    font-size: 1.5em;
+    border: 0;
+    border-radius: 1em;
+    width: 40%;
+    padding: 0.5em;
+}
+
 #embedContainer
 {
     display: flex;

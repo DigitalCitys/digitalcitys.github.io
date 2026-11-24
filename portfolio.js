@@ -18,6 +18,7 @@ function buildStartOfSite()
                 <li><a href="index.html"><button>🪪 About</button></a></li>
                 <li><a href="skills.html"><button>🌟 Skills</button></a></li>
                 <li><a href="portfolio.html"><button>📂 Portfolio</button></a></li>
+                <li><a href="blender.html"><button><img src="images/blender.webp" alt="blender" style="width: 24px; height: auto;"> Blender</button></a></li>
             </ul>
         </nav>
     `
